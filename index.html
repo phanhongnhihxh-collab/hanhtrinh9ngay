@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hành Trình 9 Ngày Xanh - Giáo Dục Môi Trường</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --accent-color: #81c784;
+            --bg-color: #f1f8e9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #4caf50, #2e7d32);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .map-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .station-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 6px solid var(--primary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .station-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .station-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .day-badge {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .btn-start {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            box-sizing: border-box;
+        }
+
+        .btn-start:hover {
+            background-color: #388e3c;
+        }
+
+        /* Khung Chatbot thu nhỏ góc dưới */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2e7d32;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌱 HÀNH TRÌNH 9 NGÀY BẢO VỆ TRÁI ĐẤT 🌱</h1>
+        <p>Cùng khám phá các bài học, video thú vị và thử thách tương tác mỗi ngày nhé!</p>
+    </header>
+
+    <main class="map-container">
+        <!-- Trạm 1 -->
+        <div class="station-card">
+            <div class="station-icon">💧</div>
+            <span class="day-badge">Ngày 1 - 2</span>
+            <h2>Trạm 1: Tiết Kiệm Nước</h2>
+            <p><strong>Nội dung:</strong> Nhận biết tầm quan trọng của nước & Thực hành tiết kiệm nước hàng ngày.</p>
+            <a href="tram/tram-1.html" class="btn-start">Khám Phá Trạm 1</a>
+        </div>
+
+        <!-- Trạm 2 -->
+        <div class="station-card">
+            <div class="station-icon">♻️</div>
+            <span class="day-badge">Ngày 3 - 4</span>
+            <h2>Trạm 2: Phân Loại Rác</h2>
+            <p><strong>Nội dung:</strong> Nhận biết rác hữu cơ/vô cơ & Thực hành giảm thiểu rác thải nhựa.</p>
+            <a href="tram/tram-2.html" class="btn-start">Khám Phá Trạm 2</a>
+        </div>
+
+        <!-- Trạm 3 -->
+        <div class="station-card">
+            <div class="station-icon">⚡</div>
+            <span class="day-badge">Ngày 5 - 6</span>
+            <h2>Trạm 3: Tiết Kiệm Điện</h2>
+            <p><strong>Nội dung:</strong> Nhận biết năng lượng điện & Thực hành tắt các thiết bị khi không dùng.</p>
+            <a href="tram/tram-3.html" class="btn-start">Khám Phá Trạm 3</a>
+        </div>
+
+        <!-- Trạm 4 -->
+        <div class="station-card">
+            <div class="station-icon">🌱</div>
+            <span class="day-badge">Ngày 7 - 8</span>
+            <h2>Trạm 4: Bảo Vệ Cây Xanh</h2>
+            <p><strong>Nội dung:</strong> Tìm hiểu vai trò của cây xanh & Thực hành chăm sóc, trồng cây.</p>
+            <a href="tram/tram-4.html" class="btn-start">Khám Phá Trạm 4</a>
+        </div>
+
+        <!-- Trạm Chung Kết -->
+        <div class="station-card" style="border-top-color: #fbc02d; grid-column: 1 / -1;">
+            <div class="station-icon">🌍</div>
+            <span class="day-badge" style="background-color: #fffde7; color: #f57f17;">Ngày 9</span>
+            <h2>Chung Kết: Hiệp Sĩ Môi Trường</h2>
+            <p><strong>Nội dung:</strong> Tổng hợp kiến thức 9 ngày qua bài trắc nghiệm lớn & nhận Chứng nhận Hiệp sĩ Xanh.</p>
+            <a href="tram/chung-ket.html" class="btn-start" style="background-color: #fbc02d; color: #333;">Vào Vòng Chung Kết</a>
+        </div>
+    </main>
+
+    <!-- Nút mở Chatbot trợ lý học tập -->
+    <div class="chatbot-widget" onclick="alert('Xin chào! Tớ là Trợ lý Xanh. Bạn cần tớ trợ giúp điều gì trong bài học hôm nay?')">
+        🤖 Trợ lý Xanh
+    </div>
+
+</body>
+</html>
